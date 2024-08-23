@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat+Alternates:wght@400;500;600;700;800&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Oswald:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Rubik:ital,wght@0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container main-div ">
+        <div class="row main-div-row justify-content-center align-items-center ">
+            <div class="col-lg-7 main-div-col justify-content-center">
+                <div id="input1" style="display: block;" class="input-field text-center ">
+                    <label for="age" class="input-label">Enter Your Age </label><br>
+                    <input type="number" name="age" id="age" class="input" required><br>
+                </div>
+
+                <div id="input2" style="display: none;" class="input-field text-center">
+                    <label for="netSalary" class="input-label">Enter Your Net Salary: </label><br>
+                    <input type="number" name="netSalary" id="netSalary" class="input" required>
+                </div>
+                <div id="input3" style="display: none;" class="input-field text-center">
+                    <label for="percentage" class="input-label">Annual Incrase in salary: </label><br>
+
+                    <input type="number" name="percentage" id="percentage" class="input" required placeholder="e.g 2%">
+                </div>
+                <div id="input4" style="display: none;" class="input-field text-center">
+                    <label for="retirementAge" class="input-label">Enter Your Retirement Age: </label><br>
+
+                    <input type="number" name="retirement" id="retirementAge" class="input" required>
+                </div>
+                <!-- <input type="text" name="percentage" id=""> -->
+                <div style="display: none;" id="input5" class="answer-field text-center">
+                    <!-- <p>Answer:<span id="result"> </span></p> -->
+                    <h1>Your Result</h1>
+                    <p class="calculated-result">The Value of your labor: € <span id="result"> </span></p>
+                    <p class="description">The value of your labor was calculated based on your entries. This is the
+                        income you will earn
+                        throughout your working life. Private insurance for your workforce is recommended!</p>
+                </div>
+
+                <div class="btn-group d-block text-center">
+                    <button onclick="showPreviousInput()" id="previous" style="display: none;" 
+                        class="button btn ">previous</button>
+
+                    <button onclick="showNextInput()" id="next" style="display: inline-block;"
+                        class="button btn ">next</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
